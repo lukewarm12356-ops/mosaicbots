@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Mosaic — AI App Marketplace</title>
+  <meta name="description" content="The marketplace to discover, buy and sell production-ready AI tools. Browse AI agents built by real creators.">
+  <meta name="keywords" content="AI marketplace, AI tools, AI agents, AI apps, buy AI, sell AI, AI bots">
+  <meta name="author" content="Mosaic">
+  <meta name="theme-color" content="#1C1917">
+
+  <!-- OG TAGS -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mosaicbots.com">
+  <meta property="og:title" content="Mosaic — AI App Marketplace">
+  <meta property="og:description" content="The marketplace to discover, buy and sell production-ready AI tools.">
+  <meta property="og:image" content="https://mosaicbots.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Mosaic">
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://mosaicbots.com">
+  <meta name="twitter:title" content="Mosaic — AI App Marketplace">
+  <meta name="twitter:description" content="The marketplace to discover, buy and sell production-ready AI tools.">
+  <meta name="twitter:image" content="https://mosaicbots.com/og-image.png">
+
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Mosaic">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(() => {});
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mosaicbots.com/sitemap.xml
