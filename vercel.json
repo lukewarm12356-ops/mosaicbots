@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/:path*" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "functions": {
+    "api/upload-project.js": { "maxDuration": 60 },
+    "api/serve-project.js": { "maxDuration": 30 }
+  }
+}
